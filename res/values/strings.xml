@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExampleTextViewCustomBackground</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="listViewMenuSource">
+        <item>Hello</item>
+        <item>Device</item>
+    </string-array>
+
+    <string name="btnAddName">Add Device</string>
+    <string name="title_activity_add_device">AddDeviceActivity</string>
+
+</resources>

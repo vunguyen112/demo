@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.exampletextviewcustombackground.AddDeviceActivity"
+    tools:ignore="MergeRootFrame"
+	android:orientation="vertical"
+	>
+    <EditText 
+        android:id="@+id/editIDDevice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:hint="Type the text"
+        android:gravity="top|left"
+        android:background="@drawable/textviewstyle"
+        />
+</LinearLayout>
+
