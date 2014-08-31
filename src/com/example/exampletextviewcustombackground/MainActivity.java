@@ -19,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 import android.os.Build;
 
 public class MainActivity extends Activity  {
@@ -27,6 +28,7 @@ public class MainActivity extends Activity  {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this, "Everything OK", Toast.LENGTH_LONG).show();
         ListView lv=(ListView) findViewById(R.id.lvMenu);
         String[] list=getResources().getStringArray(R.array.listViewMenuSource);
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
