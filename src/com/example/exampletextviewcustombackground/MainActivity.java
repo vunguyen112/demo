@@ -19,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 import android.os.Build;
 
 public class MainActivity extends Activity  {
@@ -27,10 +28,8 @@ public class MainActivity extends Activity  {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        Log.v("A", "A");
-        
-        
+        // Add comment. aaaaa
+        Log.v("V", "A");
         ListView lv=(ListView) findViewById(R.id.lvMenu);
         String[] list=getResources().getStringArray(R.array.listViewMenuSource);
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
@@ -45,7 +44,7 @@ public class MainActivity extends Activity  {
 				if(position ==1)
 				{
 
-						Log.v("Vin", "AddDeviceClick");
+						
 						if(fragment==null)
 						{
 							fragment=new MyFragment();
@@ -57,13 +56,13 @@ public class MainActivity extends Activity  {
 				{	
 						getFragmentManager().beginTransaction().remove(fragment);
 						fragment=null;
-						Log.v("Vin", "ELSE");
+						
 					
 				}
 			}
 		});
         
-        Log.v("Hard", "Hard");
+      
     }
 
 
