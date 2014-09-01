@@ -29,6 +29,8 @@ public class MainActivity extends Activity  {
         setContentView(R.layout.activity_main);
         
         Log.v("A", "A");
+        
+        
         ListView lv=(ListView) findViewById(R.id.lvMenu);
         String[] list=getResources().getStringArray(R.array.listViewMenuSource);
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
