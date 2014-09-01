@@ -29,6 +29,9 @@ public class MainActivity extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this, "Everything OK", Toast.LENGTH_LONG).show();
+        Log.v("V", "V");
+        Log.v("V", "V");
+        Log.v("V", "V");
         ListView lv=(ListView) findViewById(R.id.lvMenu);
         String[] list=getResources().getStringArray(R.array.listViewMenuSource);
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
