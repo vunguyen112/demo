@@ -28,39 +28,39 @@ public class MainActivity extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-//        Log.v("A", "A");
-//        ListView lv=(ListView) findViewById(R.id.lvMenu);
-//        String[] list=getResources().getStringArray(R.array.listViewMenuSource);
-//        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
-//        lv.setAdapter(adapter);
-//        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//			@Override
-//			public void onItemClick(AdapterView<?> parent, View view,
-//					int position, long id) {
-//				// TODO Auto-generated method stub
-//				MyFragment fragment=null;
-//				if(position ==1)
-//				{
-//
-//						Log.v("Vin", "AddDeviceClick");
-//						if(fragment==null)
-//						{
-//							fragment=new MyFragment();
-//							getFragmentManager().beginTransaction().add(R.id.contain, fragment).commit();
-//							
-//						}
-//				}
-//				else
-//				{	
-//						getFragmentManager().beginTransaction().remove(fragment);
-//						fragment=null;
-//						Log.v("Vin", "ELSE");
-//					
-//				}
-//			}
-//		});
-//        
+        Log.v("A", "A");
+        ListView lv=(ListView) findViewById(R.id.lvMenu);
+        String[] list=getResources().getStringArray(R.array.listViewMenuSource);
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
+        lv.setAdapter(adapter);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				// TODO Auto-generated method stub
+				MyFragment fragment=null;
+				if(position ==1)
+				{
+
+						Log.v("Vin", "AddDeviceClick");
+						if(fragment==null)
+						{
+							fragment=new MyFragment();
+							getFragmentManager().beginTransaction().add(R.id.contain, fragment).commit();
+							
+						}
+				}
+				else
+				{	
+						getFragmentManager().beginTransaction().remove(fragment);
+						fragment=null;
+						Log.v("Vin", "ELSE");
+					
+				}
+			}
+		});
+        
         Log.v("Hard", "Hard");
     }
 
