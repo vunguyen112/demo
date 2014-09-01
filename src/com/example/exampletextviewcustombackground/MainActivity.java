@@ -28,7 +28,7 @@ public class MainActivity extends Activity  {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Add comment.aaa
+        // Add comment. aaaaa
         Log.v("V", "A");
         ListView lv=(ListView) findViewById(R.id.lvMenu);
         String[] list=getResources().getStringArray(R.array.listViewMenuSource);
